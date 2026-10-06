@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Heet M Nasit, a Computer Science & Engineering student building practical web applications and backend systems."
+    />
+    <meta property="og:title" content="Heet M Nasit | Portfolio" />
+    <meta
+      property="og:description"
+      content="Computer Science & Engineering Student | Backend & Web Developer"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b0b0d" />
+
+    <title>Heet M Nasit | Portfolio</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0d'/%3E%3Ctext x='32' y='40' fill='%23f3f1ec' font-family='Georgia,serif' font-size='24' text-anchor='middle'%3EHM%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="nav-logo" href="#hero" aria-label="Heet M Nasit home">Heet M Nasit</a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-panel" id="primary-menu">
+          <ul class="nav-links">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#experience">Experience</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+            <span class="theme-toggle__text">Theme</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="open-overlay"
+      role="button"
+      tabindex="0"
+      aria-label="Open navigation menu"
+      aria-controls="overlay-navigation"
+      aria-expanded="false"
+    >
+      <span class="bar-top"></span>
+      <span class="bar-middle"></span>
+      <span class="bar-bottom"></span>
+    </div>
+
+    <div class="overlay-navigation" id="overlay-navigation" aria-hidden="true">
+      <nav role="navigation" aria-label="Overlay navigation">
+        <ul>
+          <li><a href="#about" data-content="Who I am">About</a></li>
+          <li><a href="#skills" data-content="What I know">Skills</a></li>
+          <li><a href="#projects" data-content="What I built">Projects</a></li>
+          <li><a href="#experience" data-content="Where I worked">Experience</a></li>
+          <li><a href="#contact" data-content="Say hello">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main id="main">
+      <section class="hero section" id="hero" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="eyebrow">una,Gujarat, India</p>
+            <h1 id="hero-title">Heet M Nasit</h1>
+            <p class="hero__tagline">Computer Science &amp; Engineering Student | Backend &amp; Web Developer</p>
+            <p class="hero__subtitle">CSE student building practical web applications and backend systems.</p>
+
+            <div class="hero__actions" aria-label="Primary actions">
+              <a class="button button--primary" href="#projects">View Projects</a>
+              <a class="button button--secondary" href="assets/files/resume.pdf" download>Download Resume</a>
+              <a class="button button--ghost" href="#contact">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container section__grid reveal">
+          <div class="section__header">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">About Me</h2>
+          </div>
+          <div class="section__content">
+            <p>
+              I'm a B.Tech CSE student at Indus University in una. I build web applications and backend APIs with
+              JavaScript, Node.js and Python. In June 2026 I interned on the Python team at Lemon Technologies, where I
+              wrote web-scraping bots and worked with Django and databases.
+            </p>
+            <dl class="info-list" aria-label="Basic details">
+              <div>
+                <dt>Education</dt>
+                <dd>B.Tech in Computer Science &amp; Engineering, Indus University. Expected graduation 2028. CGPA 8.78</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:heetnasit80@gmail.com">heetnasit80@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>una,Gujarat, India</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="eyebrow">Projects</p>
+            <h2 id="projects-title">Selected Work</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-card__header">
+                <h3>Food Queue App</h3>
+                <div class="project-card__links" aria-label="Food Queue App links">
+                  <a href="https://github.com/heetnasit" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://food-queue-app.vercel.app" target="_blank" rel="noopener noreferrer">Live</a>
+                </div>
+              </div>
+
+              <div class="project-card__body">
+                <p><strong>Problem:</strong> Managing food orders in an organized FIFO queue for a college food-ordering workflow.</p>
+                <p>
+                  <strong>What I built:</strong> A web-based food ordering/queue management application that implements queue
+                  data-structure concepts. Users add orders to the queue and process them in FIFO order.
+                </p>
+                <div class="tag-list" aria-label="Food Queue App technologies">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <!-- EDIT: confirm if React/Vite were used in the final version and add them -->
+                </div>
+                <p>
+                  <strong>Result:</strong> Implemented FIFO-based order processing and demonstrated practical use of queue data
+                  structures in a working web application.
+                </p>
+                <!-- EDIT: confirm this repo's account name matches my GitHub profile -->
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__header">
+                <h3>Mobile Store Backend</h3>
+                <div class="project-card__links" aria-label="Mobile Store Backend links">
+                  <a href="https://mobyx-eight.vercel.app" target="_blank" rel="noopener noreferrer">Live / API</a>
+                </div>
+              </div>
+
+              <div class="project-card__body">
+                <p>
+                  <strong>Problem:</strong> Providing backend APIs for authentication, user management, CRUD operations and
+                  mobile-store data management.
+                </p>
+                <p>
+                  <strong>What I built:</strong> A backend API application with authentication, CRUD operations, database
+                  integration and API testing.
+                </p>
+                <div class="tag-list" aria-label="Mobile Store Backend technologies">
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Express.js</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Mongoose</span>
+                  <span class="tag">JWT</span>
+                  <span class="tag">Postman</span>
+                </div>
+                <p><strong>Result:</strong> Built and tested REST APIs for authentication and backend data management.</p>
+                <!-- EDIT: add the repository link here when available -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title">Internship</h2>
+          </div>
+
+          <article class="timeline-card reveal">
+            <div class="timeline-card__marker" aria-hidden="true"></div>
+            <div class="timeline-card__content">
+              <p class="timeline-card__date">5 June 2026 - 30 June 2026</p>
+              <h3>Python Intern, Lemon Technologies Pvt. Ltd.</h3>
+              <ul>
+                <li>Developed the DMCC Company Bot from scratch to collect company information from the DMCC website.</li>
+                <li>Used Selenium and Requests for web/UI data extraction and OpenPyXL for generating Excel reports.</li>
+                <li>Maintained and improved the E-Proceeding Bot by fixing bugs and improving existing functionality.</li>
+                <li>Worked with GitLab merge requests and backend development workflows.</li>
+                <li>Worked with Django and database connectivity.</li>
+              </ul>
+              <div class="tag-list" aria-label="Internship technologies">
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Selenium</span>
+                <span class="tag">Requests</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">OpenPyXL</span>
+                <span class="tag">GitLab</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">DataGrip</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">Technical Skills</h2>
+          </div>
+
+          <div class="skills-grid">
+            <section class="skill-group reveal" aria-labelledby="programming-title">
+              <h3 id="programming-title">Programming</h3>
+              <div class="tag-list">
+                <span class="tag">Python <span class="tag__level">Intermediate</span></span>
+                <span class="tag">JavaScript <span class="tag__level">Intermediate</span></span>
+                <span class="tag">HTML <span class="tag__level">Intermediate</span></span>
+                <span class="tag">CSS <span class="tag__level">Intermediate</span></span>
+                <span class="tag">C++</span>
+                <!-- EDIT: add level -->
+                <span class="tag">Java</span>
+                <!-- EDIT: add level -->
+              </div>
+            </section>
+
+            <section class="skill-group reveal" aria-labelledby="backend-title">
+              <h3 id="backend-title">Backend</h3>
+              <div class="tag-list">
+                <span class="tag">Django <span class="tag__level">Beginner-Intermediate</span></span>
+                <span class="tag">Node.js</span>
+                <!-- EDIT: add level -->
+                <span class="tag">Express.js</span>
+                <!-- EDIT: add level -->
+              </div>
+            </section>
+
+            <section class="skill-group reveal" aria-labelledby="databases-title">
+              <h3 id="databases-title">Databases</h3>
+              <div class="tag-list">
+                <span class="tag">MySQL <span class="tag__level">Beginner-Intermediate</span></span>
+                <span class="tag">MongoDB</span>
+                <!-- EDIT: add level -->
+                <span class="tag">SQLite</span>
+                <!-- EDIT: add level -->
+              </div>
+            </section>
+
+            <section class="skill-group reveal" aria-labelledby="tools-title">
+              <h3 id="tools-title">Tools</h3>
+              <div class="tag-list">
+                <span class="tag">Git <span class="tag__level">Intermediate</span></span>
+                <span class="tag">GitHub <span class="tag__level">Intermediate</span></span>
+                <span class="tag">GitLab <span class="tag__level">Intermediate</span></span>
+                <span class="tag">Postman <span class="tag__level">Intermediate</span></span>
+                <span class="tag">VS Code <span class="tag__level">Advanced</span></span>
+              </div>
+            </section>
+
+            <section class="skill-group reveal" aria-labelledby="automation-title">
+              <h3 id="automation-title">Data / Automation</h3>
+              <div class="tag-list">
+                <span class="tag">Selenium <span class="tag__level">Intermediate</span></span>
+                <span class="tag">Requests <span class="tag__level">Intermediate</span></span>
+                <span class="tag">Pandas <span class="tag__level">Beginner-Intermediate</span></span>
+                <span class="tag">OpenPyXL <span class="tag__level">Intermediate</span></span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Contact</h2>
+            <p>Email: <a href="mailto:heetnasit80gmail.com">heetnasit80gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/heetnasit" target="_blank" rel="noopener noreferrer">https://github.com/heetnasit</a></p>
+            <p>
+              LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/heet-nasit-b89665422?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://www.linkedin.com/in/heet-nasit-b89665422?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios
+              </a>
+            </p>
+            <a class="button button--primary" href="mailto:heetnasit80gmail.com">Send Email</a>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required />
+              <p class="form-error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required />
+              <p class="form-error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" aria-describedby="message-error" required></textarea>
+              <p class="form-error" id="message-error" aria-live="polite"></p>
+            </div>
+            <button class="button button--primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="page-meta page-meta--left" aria-hidden="true">una,Gujarat, India</div>
+    <div class="page-meta page-meta--right" aria-hidden="true">Scroll to explore</div>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>&copy; <span id="footer-year">2026</span> Heet M Nasit</p>
+        <ul class="footer-links" aria-label="Footer links">
+          <li><a href="https://github.com/heetnasit" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/heet-nasit-b89665422?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios"
+              target="_blank"
+              rel="noopener noreferrer"
+            >LinkedIn</a>
+          </li>
+          <li><a href="mailto:heetnasit80gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
